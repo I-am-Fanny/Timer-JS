@@ -1,0 +1,76 @@
+/*font URL*/
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(90deg, hsla(270, 94%, 25%, 1) 0%, hsla(158, 94%, 49%, 1) 100%);
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock{
+    font-size: 2rem;
+    text-shadow: 2px rgb(0,0,0);
+    color: rgb(255,2555,255);
+}
+
+.number{
+    display: inline-block;
+    width: 14rem;
+    font-size: 11rem;
+    text-align: center;
+    color: rgb(255,2555,255);
+    text-shadow: 2px rgb(0,0,0);
+    border: none;
+    background-color: transparent;
+}
+
+.buttons button{
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    padding: 4rem;
+    border: none;
+    border-radius: 50%;
+}
+
+#play{
+    background-image: url('../img/play.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#stop{
+    background-image: url('../img/stop.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#play:active{
+    background-color: lightgreen;
+}
+
+#stop:active{
+    background-color: lightcoral;
+}
